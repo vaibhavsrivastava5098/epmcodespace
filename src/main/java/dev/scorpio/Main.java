@@ -1,8 +1,6 @@
 package dev.scorpio;
 
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -11,9 +9,17 @@ public class Main {
         /*System.out.println("just testing java 11 feature..");
         int[] ints = {21,5,1,7,9,3,12};
         int len = 3;
-        largestSumSubarray(ints, len);*/
+        largestSumSubarray(ints, len);
         String input = "aabbcccddddeeefffff"; // Example input
-        findSecondHighestOccurrence(input);
+        findSecondHighestOccurrence(input);*/
+        String s = "hello    my name       is         vaibhav";
+        getDistinctWordsWithUnevenSpaces(s);
+    }
+
+    private static void getDistinctWordsWithUnevenSpaces(String str) {
+        StringTokenizer st = new StringTokenizer(str);
+        while(st.hasMoreTokens())
+            System.out.println(st.nextToken());
     }
 
     private static void findSecondHighestOccurrence(String input) {
